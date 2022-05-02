@@ -3,16 +3,16 @@
 char	*get_next_line(int fd)
 {
     char    *gnl;
-    static char buf[1024][BUFFER_SIZE];
+    static char buf[BUFFER_SIZE];
     char    *tmp;
     char *add;
 
-    add = buf[fd];
+    add = buf;
     gnl = NULL;
     tmp = NULL;
     if (fd < 0 || fd > 1023 || BUFFER_SIZE < 1)
         return (NULL);
-    if (buf[fd][0])
+    if (buf[0])
         gnl = find_line(&tmp, &add);
     if (gnl)
         return (gnl);
