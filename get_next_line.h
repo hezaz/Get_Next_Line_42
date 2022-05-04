@@ -1,5 +1,5 @@
-#ifndef	GNL
-	#define GNL
+#ifndef	GNL_H
+	# define GNL_H
 
 #include <stdio.h>
 #include <unistd.h>
@@ -18,10 +18,10 @@
 #include <assert.h>
 
 
-size_t  ft_strlen(const char *s);
+size_t	ft_strlen(const char *s);
 char	*gnl_dup(char *s1, size_t n);
-char    *gnl_join(char *tmp, char *buf);
-char    *find_line(char **tmp, char **buf);
+char	*gnl_join(char *tmp, char *buf);
+char	*find_line(char **tmp, char **buf);
 char	*get_next_line(int fd);
 
 #endif

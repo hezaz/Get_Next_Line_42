@@ -1,5 +1,5 @@
-#ifndef	GNL
-	#define GNL
+#ifndef	GNLBONUS_H
+	#define GNLBONUS_H
 
 #include <stdio.h>
 #include <unistd.h>
